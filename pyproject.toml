@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "poker_room"
+version = "0.1.0"
+description = ""
+authors = ["konstantin.zavadskiy <konstantin.zavadsky@semrush.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.79.0"
+uvicorn = "^0.18.2"
+SQLAlchemy = "2.0.0"
+asyncpg = "^0.26.0"
+websockets = "^10.3"
+alembic = "^1.8.1"
+passlib = "^1.7.4"
+pydantic = {extras = ["email"], version = "^1.9.2"}
+PyJWT = "^2.4.0"
+Jinja2 = "^3.1.2"
+python-multipart = "^0.0.5"
+bcrypt = "^4.0.0"
+aioredis = "^2.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2.1"
+pytest-asyncio = "^0.20.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
